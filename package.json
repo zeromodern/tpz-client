@@ -1,0 +1,41 @@
+{
+  "name": "@0mod/tpz",
+  "version": "0.1.0",
+  "description": "Standardized, privacy-first, adblock-resilient telemetry engine with declarative HTML triggers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./edge": {
+      "types": "./dist/edge.d.ts",
+      "import": "./dist/edge.js",
+      "default": "./dist/edge.js"
+    },
+    "./browser": "./dist/tpz.min.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "telemetry",
+    "analytics",
+    "privacy",
+    "cloudflare-workers",
+    "analytics-engine",
+    "first-party"
+  ],
+  "author": "0mod / Topazly",
+  "license": "MIT"
+}
